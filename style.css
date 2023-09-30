@@ -41,20 +41,22 @@ main {
 
 .music-item {
     display: flex;
+    flex-direction: column; /* Alterado para empilhar os elementos verticalmente em telas menores */
     align-items: center;
     margin: 10px 0;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.634); /* Cor de fundo com transparência */
-    /* O último valor '0.7' define a opacidade (0-1), ajuste conforme necessário */
+    /* O último valor '0.634' define a opacidade (0-1), ajuste conforme necessário */
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left:180px;
+    text-align: center; /* Centralizar o texto */
+    margin-left: 0; /* Removido o deslocamento à esquerda */
 }
 
 .music-number {
     font-size: 1.5rem;
-    margin-right: 20px;
     color: #ff3860;
+    margin-bottom: 10px; /* Adicionado espaço abaixo do número */
 }
 
 .music-details {
@@ -63,13 +65,13 @@ main {
 
 h2 {
     font-size: 1.2rem;
+    margin-bottom: 5px; /* Adicionado espaço abaixo do título */
 }
 
 p {
     font-size: 1rem;
     color: #b2119d;
 }
-/* Restante do código CSS anterior */
 
 /* Estilos do link da música */
 .music-link {
