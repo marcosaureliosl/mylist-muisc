@@ -1,0 +1,83 @@
+/* Reset de estilos básicos do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url(https://img.freepik.com/vetores-gratis/design-de-fundo-de-notas-musicais-brilhantes-e-brilhantes_1017-32856.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Isso torna a imagem fixa enquanto você rola a página */
+    background-position: center;
+}
+
+header {
+    background-color: #383636;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos da lista de músicas */
+.music-list {
+    list-style: none;
+}
+
+.music-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.634); /* Cor de fundo com transparência */
+    /* O último valor '0.7' define a opacidade (0-1), ajuste conforme necessário */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left:180px;
+}
+
+.music-number {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    color: #ff3860;
+}
+
+.music-details {
+    flex: 1;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #b2119d;
+}
+/* Restante do código CSS anterior */
+
+/* Estilos do link da música */
+.music-link {
+    text-decoration: none;
+    color: #0077b6; /* Cor do link */
+    transition: color 0.3s; /* Transição de cor suave */
+}
+
+.music-link:hover {
+    color: #ff3860; /* Cor do link ao passar o mouse */
+}
